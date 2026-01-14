@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Urban Threads | Men's Shirts</title>
+  <title>Urban Threads | Men's Fashion</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
 <header class="top-nav">
   <h2>URBAN THREADS</h2>
   <div>
@@ -14,81 +15,114 @@
   </div>
 </header>
 
-<section class="products">
-
-  <h2>Men's Shirts</h2>
-
-  <div class="product-grid">
-
-    <div class="product-card">
-      <img src="images/shirt1.jpg" alt="Maroon Shirt">
-      <h3>Maroon Casual Shirt</h3>
-      <p>₹1,299</p>
-      <button onclick="addToCart('Maroon Casual Shirt',1299)">Add to Cart</button>
-    </div>
-
-    <div class="product-card">
-      <img src="images/shirt2.jpg" alt="Checked Overshirt">
-      <h3>Checked Overshirt</h3>
-      <p>₹1,499</p>
-      <button onclick="addToCart('Checked Overshirt',1499)">Add to Cart</button>
-    </div>
-
-    <div class="product-card">
-      <img src="images/shirt3.jpg" alt="Beige Plaid Shirt">
-      <h3>Beige Plaid Shirt</h3>
-      <p>₹1,399</p>
-      <button onclick="addToCart('Beige Plaid Shirt',1399)">Add to Cart</button>
-    </div>
-
-    <div class="product-card">
-      <img src="images/shirt4.jpg" alt="Brown Check Shirt">
-      <h3>Brown Check Shirt</h3>
-      <p>₹1,599</p>
-      <button onclick="addToCart('Brown Check Shirt',1599)">Add to Cart</button>
-    </div>
-
-  </div>
+<!-- FILTER BUTTONS -->
+<section class="filters">
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts('shirts')">Shirts</button>
+  <button onclick="filterProducts('pants')">Pants</button>
 </section>
 
-  <section class="products">
+<!-- PRODUCTS -->
+<section class="products">
 
-  <h2>Men's Pants</h2>
+  <!-- SHIRTS -->
+  <div class="category shirts">
 
-  <div class="product-grid">
+    <h2>Men's Shirts</h2>
 
-    <div class="product-card">
-      <img src="images/pant1.jpg" alt="Slim Fit Jeans">
-      <h3>Slim Fit Jeans</h3>
-      <p>₹1,799</p>
-      <button onclick="addToCart('Slim Fit Jeans',1799)">Add to Cart</button>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/shirt1.jpg">
+        <h3>Maroon Casual Shirt</h3>
+        <p>₹1,299</p>
+        <button onclick="addToCart('Maroon Casual Shirt',1299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shirt2.jpg">
+        <h3>Checked Overshirt</h3>
+        <p>₹1,499</p>
+        <button onclick="addToCart('Checked Overshirt',1499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shirt3.jpg">
+        <h3>Beige Plaid Shirt</h3>
+        <p>₹1,399</p>
+        <button onclick="addToCart('Beige Plaid Shirt',1399)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shirt4.jpg">
+        <h3>Brown Check Shirt</h3>
+        <p>₹1,599</p>
+        <button onclick="addToCart('Brown Check Shirt',1599)">Add to Cart</button>
+      </div>
+
     </div>
+  </div>
 
-    <div class="product-card">
-      <img src="images/pant2.jpg" alt="Casual Chinos">
-      <h3>Casual Chinos</h3>
-      <p>₹1,699</p>
-      <button onclick="addToCart('Casual Chinos',1699)">Add to Cart</button>
+  <!-- PANTS -->
+  <div class="category pants">
+
+    <h2>Men's Pants</h2>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/pant1.jpg">
+        <h3>Slim Fit Jeans</h3>
+        <p>₹1,799</p>
+        <button onclick="addToCart('Slim Fit Jeans',1799)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/pant2.jpg">
+        <h3>Casual Chinos</h3>
+        <p>₹1,699</p>
+        <button onclick="addToCart('Casual Chinos',1699)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/pant3.jpg">
+        <h3>Formal Trousers</h3>
+        <p>₹1,899</p>
+        <button onclick="addToCart('Formal Trousers',1899)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/pant4.jpg">
+        <h3>Cargo Pants</h3>
+        <p>₹1,999</p>
+        <button onclick="addToCart('Cargo Pants',1999)">Add to Cart</button>
+      </div>
+
     </div>
-
-    <div class="product-card">
-      <img src="images/pant3.jpg" alt="Formal Trousers">
-      <h3>Formal Trousers</h3>
-      <p>₹1,899</p>
-      <button onclick="addToCart('Formal Trousers',1899)">Add to Cart</button>
-    </div>
-
-    <div class="product-card">
-      <img src="images/pant4.jpg" alt="Cargo Pants">
-      <h3>Cargo Pants</h3>
-      <p>₹1,999</p>
-      <button onclick="addToCart('Cargo Pants',1999)">Add to Cart</button>
-    </div>
-
   </div>
 
 </section>
 
 <script src="script.js"></script>
+
+<!-- FILTER SCRIPT -->
+<script>
+  function filterProducts(type) {
+    const shirts = document.querySelector(".shirts");
+    const pants = document.querySelector(".pants");
+
+    if (type === "all") {
+      shirts.style.display = "block";
+      pants.style.display = "block";
+    } else if (type === "shirts") {
+      shirts.style.display = "block";
+      pants.style.display = "none";
+    } else {
+      shirts.style.display = "none";
+      pants.style.display = "block";
+    }
+  }
+</script>
+
 </body>
 </html>
