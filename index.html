@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Urban Threads | Men's Fashion</title>
+  <meta charset="UTF-8">
+  <title>Urban Threads | Men's Shirts</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -9,31 +10,45 @@
 <header class="top-nav">
   <h2>URBAN THREADS</h2>
   <div>
-    ❤️ Wishlist (<span id="wish-count">0</span>)
     🛒 <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
   </div>
 </header>
 
 <section class="products">
 
-  <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1521334884684-d80222895322">
-    <h3>Classic Formal Shirt</h3>
-    <p>₹1299</p>
-    <button onclick="addToCart('Classic Formal Shirt',1299)">Add to Cart</button>
-    <button onclick="addToWishlist()">♡</button>
-    <br><br>
-    <a href="product.html">View Details</a>
-  </div>
+  <h2>Men's Shirts</h2>
 
-  <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
-    <h3>Slim Fit Chinos</h3>
-    <p>₹1499</p>
-    <button onclick="addToCart('Slim Fit Chinos',1499)">Add to Cart</button>
-    <button onclick="addToWishlist()">♡</button>
-  </div>
+  <div class="product-grid">
 
+    <div class="product-card">
+      <img src="images/shirt1.jpg" alt="Maroon Shirt">
+      <h3>Maroon Casual Shirt</h3>
+      <p>₹1,299</p>
+      <button onclick="addToCart('Maroon Casual Shirt',1299)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shirt2.jpg" alt="Checked Overshirt">
+      <h3>Checked Overshirt</h3>
+      <p>₹1,499</p>
+      <button onclick="addToCart('Checked Overshirt',1499)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shirt3.jpg" alt="Beige Plaid Shirt">
+      <h3>Beige Plaid Shirt</h3>
+      <p>₹1,399</p>
+      <button onclick="addToCart('Beige Plaid Shirt',1399)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shirt4.jpg" alt="Brown Check Shirt">
+      <h3>Brown Check Shirt</h3>
+      <p>₹1,599</p>
+      <button onclick="addToCart('Brown Check Shirt',1599)">Add to Cart</button>
+    </div>
+
+  </div>
 </section>
 
 <script src="script.js"></script>
