@@ -7,69 +7,79 @@
 </head>
 <body>
 
-<!-- TOP NAV -->
+<!-- NAV -->
 <header class="top-nav">
   <div class="logo">URBAN THREADS</div>
 
   <nav class="menu">
-    <a href="#">Categories</a>
-    <a href="#">Brands</a>
-    <a href="#">Style Guide</a>
+    <a href="#">Home</a>
+    <a href="#">Shirts</a>
+    <a href="#">Pants</a>
   </nav>
 
   <div class="nav-actions">
-    <input type="text" placeholder="Search men's fashion">
-    <button class="signin">Sign In</button>
+    <span>❤️ Wishlist (<span id="wish-count">0</span>)</span>
+    <span>🛒 Cart (<span id="cart-count">0</span>)</span>
   </div>
 </header>
 
-<!-- CATEGORY BAR -->
-<section class="categories">
-  <div class="cat-item">
-    <img src="https://via.placeholder.com/80" />
-    <p>Shirts</p>
-  </div>
-  <div class="cat-item">
-    <img src="https://via.placeholder.com/80" />
-    <p>Pants</p>
-  </div>
-  <div class="cat-item">
-    <img src="https://via.placeholder.com/80" />
-    <p>Footwear</p>
-  </div>
-  <div class="cat-item">
-    <img src="https://via.placeholder.com/80" />
-    <p>Watches</p>
-  </div>
-  <div class="cat-item">
-    <img src="https://via.placeholder.com/80" />
-    <p>Grooming</p>
-  </div>
-</section>
+<!-- PRODUCTS -->
+<section class="products">
+  <h2>Trending Men's Wear</h2>
 
-<!-- BANNERS -->
-<section class="banners">
+  <div class="product-grid">
 
-  <div class="banner large">
-    <h2>UP TO 60% OFF</h2>
-    <p>Premium Shirts & Pants</p>
+    <!-- PRODUCT 1 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1521334884684-d80222895322" alt="Formal Shirt">
+      <h3>Classic Formal Shirt</h3>
+      <p class="price">₹1,299</p>
+      <div class="actions">
+        <button onclick="addToCart()">Add to Cart</button>
+        <button class="wish" onclick="addToWishlist()">♡</button>
+      </div>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf" alt="Casual Shirt">
+      <h3>Casual Cotton Shirt</h3>
+      <p class="price">₹999</p>
+      <div class="actions">
+        <button onclick="addToCart()">Add to Cart</button>
+        <button class="wish" onclick="addToWishlist()">♡</button>
+      </div>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Chinos">
+      <h3>Slim Fit Chinos</h3>
+      <p class="price">₹1,499</p>
+      <div class="actions">
+        <button onclick="addToCart()">Add to Cart</button>
+        <button class="wish" onclick="addToWishlist()">♡</button>
+      </div>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1583004231608-7a1c78f18b29" alt="Jeans">
+      <h3>Premium Denim Jeans</h3>
+      <p class="price">₹1,799</p>
+      <div class="actions">
+        <button onclick="addToCart()">Add to Cart</button>
+        <button class="wish" onclick="addToWishlist()">♡</button>
+      </div>
+    </div>
+
   </div>
-
-  <div class="banner">
-    <h2>Fresh All Day</h2>
-    <p>New Summer Collection</p>
-  </div>
-
-  <div class="banner dark">
-    <h2>Luxury Wear</h2>
-    <p>Elite Men's Fashion</p>
-  </div>
-
 </section>
 
 <footer>
   © 2026 Urban Threads. All Rights Reserved.
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
