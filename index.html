@@ -2,16 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My First Website</title>
+  <title>Urban Threads | Men's Wear</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hello, I am Yeswanth 👋</h1>
-  <p>This is my first website built from scratch using GitHub.</p>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h1 class="logo">URBAN THREADS</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shirts</a>
+      <a href="#">Pants</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-  <button onclick="sayHello()">Click Me</button>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Premium Men's Clothing</h2>
+    <p>Style that defines confidence</p>
+    <button>Shop Now</button>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h2>Our Collection</h2>
+
+    <div class="product-grid">
+
+      <!-- PRODUCT 1 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x300" alt="Formal Shirt">
+        <h3>Classic Formal Shirt</h3>
+        <p>₹1,299</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x300" alt="Casual Shirt">
+        <h3>Casual Cotton Shirt</h3>
+        <p>₹999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x300" alt="Chinos">
+        <h3>Slim Fit Chinos</h3>
+        <p>₹1,499</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <!-- PRODUCT 4 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x300" alt="Denim Jeans">
+        <h3>Denim Jeans</h3>
+        <p>₹1,799</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Urban Threads. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
